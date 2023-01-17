@@ -8,14 +8,12 @@ function Projects() {
   const [active, setActive] = useState();
 
   useEffect(() => {
-    if (!!project_data?.projects) {
-      let newNames = project_data.projects.map((project) => {
-        return project.title;
-      });
-      setProjectNames(newNames);
-      setActive(newNames[0]);
-    }
-  }, [project_data]);
+    let newNames = project_data.projects.map((project) => {
+      return project.title;
+    });
+    setProjectNames(newNames);
+    setActive(newNames[0]);
+  }, []);
 
   return (
     <>

@@ -1,6 +1,7 @@
 import React from "react";
 import Tab from "./Tab";
 import styles from "./Tabs.module.css";
+import PropTypes from "prop-types"
 
 function Tabs({ tabNames, active, setActive }) {
   return (
@@ -15,6 +16,12 @@ function Tabs({ tabNames, active, setActive }) {
       ))}
     </div>
   );
+}
+
+Tabs.propTypes = {
+  active: PropTypes.string,
+  setActive: PropTypes.func,
+  name: PropTypes.string,
 }
 
 export default Tabs;
