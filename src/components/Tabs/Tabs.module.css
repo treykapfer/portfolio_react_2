@@ -7,10 +7,17 @@
     justify-content: center;
 }
 
+.tabWrapper {
+    border: none;
+    background-color: var(--dark);
+}
+
 .activeTab {
     padding: 1rem;
+    background-color: var(--lighterDark);
     font-weight: 600;
-    color: var(--lightBlue02)
+    color: var(--lightBlue02);
+    border-radius: .5rem;
 }
 
 .inactiveTab {
