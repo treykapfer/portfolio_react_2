@@ -1,6 +1,14 @@
 import React from "react";
 
-function Project({ bodyText, title, codeURL, videoURL, demoURL, active }) {
+function Project({
+  bodyText,
+  title,
+  codeURL,
+  videoURL,
+  demoURL,
+  photoURL,
+  active,
+}) {
   return (
     <>
       {!!active && (
@@ -11,6 +19,7 @@ function Project({ bodyText, title, codeURL, videoURL, demoURL, active }) {
             <div>{codeURL}</div>
             <div>{videoURL}</div>
             <div>{demoURL}</div>
+            <div>{photoURL}</div>
           </div>
         </>
       )}

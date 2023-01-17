@@ -1,0 +1,19 @@
+@import url('../../root.css');
+
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeTab {
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--lightBlue02)
+}
+
+.inactiveTab {
+    padding: 1rem;
+    color: var(--lightBlue01)
+}

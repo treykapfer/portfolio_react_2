@@ -1,9 +1,10 @@
 import React from "react";
 import Tab from "./Tab";
+import styles from "./Tabs.module.css";
 
 function Tabs({ tabNames, active, setActive }) {
   return (
-    <div>
+    <div className={styles.tabContainer}>
       {tabNames.map((name) => (
         <Tab
           key={name}
