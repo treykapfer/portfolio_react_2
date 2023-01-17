@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Tab from "./Tab";
 
-function useTabs({ tabNames, initialTab }) {
-  const [active, setActive] = useState(initialTab || tabNames[0]);
+function useTabs({ tabNames }) {
+  const [active, setActive] = useState(tabNames[0]);
 
   const Tabs = () => {
     <div>
