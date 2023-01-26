@@ -1,0 +1,9 @@
+@import url('../../root.css');
+
+.tv {
+    display: flex;
+    padding: 2.5rem;
+    width: 100%;
+    flex: 2;
+    background-color: var(--lighterDark);
+}
