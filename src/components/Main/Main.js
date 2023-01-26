@@ -1,22 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import About from "../About";
-import Contact from "../Contact";
+import Footer from "../Footer";
 import Projects from "../Projects";
-import Home from "../Home";
-import Tabs from "../Tabs";
 import styles from "./Main.module.css";
 
 function Main() {
-  const tabNames = ["Home", "About", "Projects", "Contact"];
-  const [active, setActive] = useState(tabNames[0]);
-
   return (
     <div className={styles.pageContainer}>
-      <Tabs tabNames={tabNames} active={active} setActive={setActive} />
-      {active === "Home" && <Home />}
-      {active === "About" && <About />}
-      {active === "Projects" && <Projects />}
-      {active === "Contact" && <Contact />}
+      {/* Here there is options on the right, with a blank tv with static on the left.
+      Main page - on the right there will be "About" and "Project" options - Clicking on the about will display the about text on the tv. Clicking on the projects button will expand a dropdown that shows projects. then when you click on a project, the info will display on the tv. At the bttom, there is the footer info */}
+      <About />
+      <Projects />
+      <Footer />
     </div>
   );
 }
