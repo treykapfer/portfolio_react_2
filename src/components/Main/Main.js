@@ -13,8 +13,8 @@ function Main() {
       <main>
         <TV />
         <div className={styles.sideMenu}>
-          <About />
-          <Projects />
+          <About style={styles.buttonStyle}/>
+          <Projects style={styles.buttonStyle}/>
         </div>
       </main>
       <Footer />

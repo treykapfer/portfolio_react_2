@@ -1,22 +1,36 @@
-@import url('../../root.css');
+@import url("../../root.css");
 
 .pageContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    background-color: var(--dark);
-    padding: 2.5rem 2.5rem 0 2.5rem
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: var(--dark);
+  padding: 2.5rem 2.5rem 0 2.5rem;
 }
 
 .sideMenu {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
 }
 
 main {
-    display: flex;
-    flex: 1;
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.buttonStyle {
+
+}
+
+.buttonStyle button {
+  color: lightgreen;
+  background-color: transparent;
+  border: none;
+  font-family: 'Monofett', cursive;
+  font-size: 100px;
 }

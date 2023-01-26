@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import project_data from "./project_data.json";
-import Project from "./Project";
 import Tabs from "../Tabs";
 
-function Projects() {
+function Projects({style}) {
   const [projectNames, setProjectNames] = useState();
   const [active, setActive] = useState();
 
@@ -19,9 +18,12 @@ function Projects() {
     <>
       {!!projectNames && (
         <>
+          <div className={style}>
+            <button>Projects</button>
+          </div>
           <Tabs tabNames={projectNames} active={active} setActive={setActive} />
           <div>
-            {project_data.projects.map((project) => (
+            {/* {project_data.projects.map((project) => (
               <Project
                 key={project.id}
                 active={active === project.title}
@@ -31,7 +33,7 @@ function Projects() {
                 videoURL={project.video_url}
                 demoURL={project.demo_url}
               />
-            ))}
+            ))} */}
           </div>
         </>
       )}

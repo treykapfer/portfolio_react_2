@@ -4,7 +4,7 @@ import styles from "./TV.module.css";
 function TV() {
   return (
     <div className={styles.tv}>
-      <div>TV Text</div>
+      <div className={styles.tvText}>TV Text</div>
     </div>
   );
 }

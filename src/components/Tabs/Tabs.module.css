@@ -1,26 +1,25 @@
-@import url('../../root.css');
+@import url("../../root.css");
 
 .tabContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .tabWrapper {
-    border: none;
-    background-color: var(--dark);
+  border: none;
+  background-color: var(--dark);
 }
 
 .activeTab {
-    padding: 1rem;
-    background-color: var(--lighterDark);
-    font-weight: 600;
-    color: var(--lightBlue02);
-    border-radius: .5rem;
+  padding: 1rem;
+  background-color: var(--lighterDark);
+  font-weight: 600;
+  color: var(--lightBlue02);
+  border-radius: 0.5rem;
 }
 
 .inactiveTab {
-    padding: 1rem;
-    color: var(--lightBlue01)
+  padding: 1rem;
+  color: var(--lightBlue01);
 }

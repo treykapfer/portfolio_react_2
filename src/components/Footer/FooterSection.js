@@ -5,7 +5,7 @@ function FooterSection({ items, hasBullet = true }) {
   return (
     <ul className={styles.footerSection}>
       {items.map((item) => (
-        <li className={!hasBullet ? styles.noBullet : {}} key={item.id}>
+        <li className={!hasBullet ? styles.noBullet : null} key={item.id}>
           {item.render}
         </li>
       ))}
