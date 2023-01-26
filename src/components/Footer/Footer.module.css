@@ -10,13 +10,18 @@
 section {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .footerSection {
   display: flex;
   flex-direction: column;
+  margin-right: 24px;
   min-width: 200;
+}
+
+.footerSection:last-of-type {
+  margin-left: auto;
 }
 
 li {
