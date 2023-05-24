@@ -2,7 +2,7 @@
 
 .tv {
   padding: 2.5rem;
-  max-width: 800px;
+  width: 700px;
   background-color: var(--lighterDark);
   /* border-radius: 2.5rem; */
   margin: 0 2.5rem 2.5rem 0;
@@ -19,7 +19,6 @@
     inset 1px 2px 4px 0px rgba(1, 43, 48, 0.25),
     inset 2px 4px 8px 0px rgba(1, 43, 48, 0.25),
     inset 2px 4px 16px 0px rgba(1, 43, 48, 0.25);
-  /* 0 0 0 15px hsl(189, 7%, 20%), */
 }
 
 .screenWrapper {
@@ -38,9 +37,7 @@
 
 .tvMenu {
   height: 92px;
-  /* background-color: red; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -62,4 +59,10 @@
   left: 50%;
   box-shadow: 0 0 0 5px hsl(189, 5%, 50%);
   transform: translateX(-50%);
+}
+
+.asset {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

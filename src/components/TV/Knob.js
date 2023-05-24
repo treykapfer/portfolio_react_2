@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./TV.module.css";
 
-const Nob = ({ nobInputs, activeInput, setActiveInput, handleTurn }) => {
+const Nob = ({ setActiveInput, knobInputs, activeInput }) => {
   const [rotationAngle, setRotationAngle] = useState(0);
 
   function rotateElement() {
@@ -9,6 +9,9 @@ const Nob = ({ nobInputs, activeInput, setActiveInput, handleTurn }) => {
     let newRotationAngle = rotationAngle + 45;
     element.style.transform = `translateX(-50%) rotate(${newRotationAngle}deg)`;
     setRotationAngle(newRotationAngle);
+    const currentIndex = knobInputs.indexOf(activeInput);
+    const newIndex = (currentIndex + 1) % knobInputs.length;
+    setActiveInput(knobInputs[newIndex]);
   }
 
   return (

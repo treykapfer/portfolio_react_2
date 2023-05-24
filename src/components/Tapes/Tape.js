@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Tabs.module.css";
+import styles from "./Tapes.module.css";
 import PropTypes from "prop-types";
 
 function Tab({ active, setActive, name, project }) {
