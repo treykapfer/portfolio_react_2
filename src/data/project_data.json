@@ -13,8 +13,8 @@
             "id": 1,
             "title": "WoW Blog",
             "body_text": "A blog/message board with a World of Warcraft theme where users create posts and interact with other user's posts by liking and commenting. When approaching the design of this project I wanted something that looked clean, but also mixed my own style with that of the game's. This was a java springboot project, as my teammate and I had just finished learning the java stack and wanted to demonstrate what we had learned.",
-            "code_url": "",
-            "video_url": "",
+            "code_url": "https://github.com/treykapfer/3ustinBlog-main",
+            "video_url": "https://drive.google.com/file/d/18FojOwaipRRCtNAOZZPDrpQr-kHwQ61k/view?usp=sharing",
             "demo_url": "",
             "date": "2021-06-15"
         },
@@ -22,17 +22,17 @@
             "id": 2,
             "title": "Junta Commander",
             "body_text": "Tower defense games were my favorite web based games to play back in middle school and highschool, so for my second project I wanted to make one similar. In Junta Commander, the player must defend resource extraction teams from vicious alien bugs. More and more bugs advance on the player's position as they collect morassium, a rare mineral used to power the Earth High Junta's blockchain currency. I hope you have as much fun playing it as I did building it with vanilla javascript. This game is compatible with desktop only!",
-            "code_url": "",
-            "video_url": "",
-            "demo_url": "",
+            "code_url": "https://github.com/treykapfer/JuntaTDLite",
+            "video_url": "https://drive.google.com/file/d/1GBalnFQ1s4yFxTQc9iSzuBkXQcdEm10C/view?usp=sharing",
+            "demo_url": "http://18.217.21.138/",
             "date": "2021-05-15"
         },
         {
             "id": 3,
             "title": "Ghoul Grinder",
             "body_text": "A fantasy flask game demo set in the land of Erenia, where you play as a brave knight fighting off hordes of undead ghouls. This was my first group project and first full stack project. Most of the game mechanics were built with flask routing. As the lead designer for this project, I gathered, manipulated, or designed the majority of game assets, and did the CSS for all pages except the world map. I was also responsible for rendering the inventory and shop items dynamically, and creating the HP bars during combat.",
-            "code_url": "",
-            "video_url": "",
+            "code_url": "https://github.com/treykapfer/Ghoul-Grinder",
+            "video_url": "https://drive.google.com/file/d/1HGeTxo-2Ch-G51N3O0ryE_vhnZq-29t5/view?usp=sharing",
             "demo_url": "",
             "date": "2021-04-15"
         }

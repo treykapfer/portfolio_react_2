@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "./TV.module.css";
 import Knob from "./Knob";
+import Links from "./Links";
+import Animation from "./Animation";
 
 function TV({ activeProject }) {
   const knobInputs = ["video", "text", "links"];
-  const [activeInput, setActiveInput] = useState(knobInputs[0]);
-
-  console.log(activeInput);
+  const [activeInput, setActiveInput] = useState(knobInputs[2]);
 
   <img
     className={styles.asset}
@@ -18,16 +18,17 @@ function TV({ activeProject }) {
       <div className={styles.screenWrapper}>
         <div className={styles.screen}>
           {activeInput === "video" ? (
-            <img
-              className={styles.asset}
-              src={require("../../img/junta_gif.gif")}
-            />
+            <Animation project={activeProject.title} />
           ) : (
             <>
               {activeInput === "text" ? (
                 <div className={styles.tvText}>{activeProject.body_text}</div>
               ) : (
-                <div>Links</div>
+                <Links
+                  demoLink={activeProject.demo_url}
+                  codeLink={activeProject.code_url}
+                  videoLink={activeProject.video_url}
+                />
               )}
             </>
           )}
