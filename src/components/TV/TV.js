@@ -20,7 +20,7 @@ function TV({ activeProject }) {
           {activeInput === "video" ? (
             <img
               className={styles.asset}
-              src={require("../../img/JuntaSS4-Cropped.png")}
+              src={require("../../img/junta_gif.gif")}
             />
           ) : (
             <>
