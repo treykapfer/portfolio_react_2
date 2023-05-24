@@ -7,7 +7,7 @@ function Footer() {
   const createdByText = [
     { id: 0, render: "Created &" },
     { id: 1, render: "Designed by" },
-    { id: 1, render: "TJ Kapfer" },
+    { id: 2, render: "TJ Kapfer" },
   ];
   const infoText = [
     { id: 0, render: "Kansas City, MO" },
@@ -15,8 +15,8 @@ function Footer() {
   ];
   const iconLinks = [
     { id: 0, render: "github" },
-    { id: 0, render: "linkedin" },
-    { id: 0, render: "phone" },
+    { id: 1, render: "linkedin" },
+    { id: 2, render: "phone" },
   ];
 
   return (

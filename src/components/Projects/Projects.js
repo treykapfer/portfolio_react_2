@@ -1,27 +1,16 @@
 import React, { useState, useEffect } from "react";
-import project_data from "./project_data.json";
 import Tabs from "../Tabs";
 
-function Projects({style}) {
-  const [projectNames, setProjectNames] = useState();
-  const [active, setActive] = useState();
-
-  useEffect(() => {
-    let newNames = project_data.projects.map((project) => {
-      return project.title;
-    });
-    setProjectNames(newNames);
-    setActive(newNames[0]);
-  }, []);
+function Projects({style, active, setActive, projects}) {
 
   return (
     <>
-      {!!projectNames && (
+      {!!projects && (
         <>
           <div className={style}>
             <button>Projects</button>
           </div>
-          <Tabs tabNames={projectNames} active={active} setActive={setActive} />
+          <Tabs projects={projects} active={active} setActive={setActive} />
           <div>
             {/* {project_data.projects.map((project) => (
               <Project

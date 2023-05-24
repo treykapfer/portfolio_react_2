@@ -1,17 +1,18 @@
 import React from "react";
 import Tab from "./Tab";
 import styles from "./Tabs.module.css";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-function Tabs({ tabNames, active, setActive }) {
+function Tabs({ projects, active, setActive }) {
   return (
     <div className={styles.tabContainer}>
-      {tabNames.map((name) => (
+      {projects.map((project) => (
         <Tab
-          key={name}
-          active={active === name}
+          key={project.id}
+          active={active.id === project.id}
           setActive={setActive}
-          name={name}
+          name={project.title}
+          project={project}
         />
       ))}
     </div>
@@ -19,9 +20,9 @@ function Tabs({ tabNames, active, setActive }) {
 }
 
 Tabs.propTypes = {
-  active: PropTypes.string,
+  active: PropTypes.object,
   setActive: PropTypes.func,
   name: PropTypes.string,
-}
+};
 
 export default Tabs;
