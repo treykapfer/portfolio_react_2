@@ -4,7 +4,7 @@ import styles from "./TV.module.css";
 const Nob = ({ setActiveInput, knobInputs, activeInput }) => {
   const [rotationAngle, setRotationAngle] = useState(0);
 
-  function rotateElement() {
+  function handleTurn() {
     var element = document.getElementById("dummy1");
     let newRotationAngle = rotationAngle + 45;
     element.style.transform = `translateX(-50%) rotate(${newRotationAngle}deg)`;
@@ -16,7 +16,7 @@ const Nob = ({ setActiveInput, knobInputs, activeInput }) => {
 
   return (
     <div className={styles.knobWrapper}>
-      <div className={styles.knob} onClick={() => rotateElement()}>
+      <div className={styles.knob} onClick={() => handleTurn()}>
         <div className={styles.knobHandle} id="dummy1">
         </div>
       </div>
