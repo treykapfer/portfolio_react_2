@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto&family=Roboto+Slab&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Monofett&family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Monofett&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /* GLOBAL VARIABLES */
 :root {
   /*color scheme*/
@@ -21,4 +22,5 @@
   --defaultFont: "Roboto", sans-serif;
   --impactFont: "Encode Sans SC", sans-serif;
   --secondaryFont: "Roboto Slab", serif;
+  --tapeFont: "Permanent Marker", "cursive";
 }

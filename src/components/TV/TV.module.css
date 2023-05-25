@@ -29,16 +29,64 @@
   border-top-left-radius: 1rem;
 }
 
-.tvText {
+.tvText, .linksWrapper {
   font-family: "Press Start 2P", cursive;
   text-shadow: 0.06rem 0 0.06rem #ea36af, -0.08rem 0 0.06rem #75fa69;
   letter-spacing: 0.125em;
+}
+
+.asset {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 75%;
+  box-shadow: 0 0 16px 24px black;
+  border-radius: 1rem;
+}
+
+.assetNoShadow {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 75%;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 48px;
+  margin: 0.5rem;
+}
+
+.link a {
+  margin-left: 1.5rem;
+  font-size: 32px;
+}
+
+.iconWrap {
+  margin-bottom: 4px;
+}
+
+a:link, a:active, a:visited, a:hover {
+  color: var(--defaultColor);
+  text-decoration: none;
 }
 
 .tvMenu {
   height: 92px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .knob {
@@ -61,27 +109,20 @@
   transform: translateX(-50%);
 }
 
-.asset {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 75%;
-  box-shadow: 0 0 16px 24px black;
-  border-radius: 1rem;
-}
-
-.assetNoShadow {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 75%;
-}
-
-.link {
+.activeTape {
+  background-color: black;
+  background-image: url("../../img/label.png");
+  width: 30rem;
+  height: 48px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.link a {
-  margin-left: 0.5rem;
+.activeTapeText {
+  font-family: var(--tapeFont);
+  font-size: 24px;
+  color: black;
+  text-align: center;
 }
