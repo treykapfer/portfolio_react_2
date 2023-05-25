@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 
-function FooterSection({ items, hasBullet = true }) {
+function FooterSection({ items, hasBullet = false }) {
   return (
     <ul className={styles.footerSection}>
       {items.map((item) => (

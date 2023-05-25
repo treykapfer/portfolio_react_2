@@ -3,7 +3,7 @@ import Link from "./Link";
 import { ReactComponent as Video } from "../../img/video.svg";
 import { ReactComponent as Code } from "../../img/code.svg";
 import { ReactComponent as ExternalLink } from "../../img/external-link.svg";
-import styles from "./TV.module.css";
+// import styles from "./TV.module.css";
 
 function Links({ demoLink, codeLink, videoLink }) {
   return (
