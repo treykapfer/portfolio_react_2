@@ -17,7 +17,8 @@ const Nob = ({ setActiveInput, knobInputs, activeInput }) => {
   return (
     <div className={styles.knobWrapper}>
       <div className={styles.knob} onClick={() => rotateElement()}>
-        <div className={styles.knobHandle} id="dummy1"></div>
+        <div className={styles.knobHandle} id="dummy1">
+        </div>
       </div>
     </div>
   );

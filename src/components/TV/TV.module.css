@@ -92,10 +92,11 @@ a:link, a:active, a:visited, a:hover {
 .knob {
   width: 60px;
   height: 60px;
-  background-color: #999;
+  background-color: var(--lighterDark);
   border-radius: 50%;
   margin-top: 20px;
   cursor: pointer;
+  box-shadow: inset 0 0 0 15px hsla(0, 0%, 100%, 0.125);
 }
 
 .knobHandle {
@@ -105,7 +106,7 @@ a:link, a:active, a:visited, a:hover {
   position: relative;
   top: 30px;
   left: 50%;
-  box-shadow: 0 0 0 5px hsl(189, 5%, 50%);
+  box-shadow: 0 0 0 5px hsl(0, 0%, 50%);
   transform: translateX(-50%);
 }
 
