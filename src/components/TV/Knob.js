@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./TV.module.css";
 
-const Nob = ({ setActiveInput, knobInputs, activeInput }) => {
+const Knob = ({ setActiveInput, knobInputs, activeInput }) => {
   const [rotationAngle, setRotationAngle] = useState(0);
 
   function handleTurn() {
@@ -24,4 +24,4 @@ const Nob = ({ setActiveInput, knobInputs, activeInput }) => {
   );
 };
 
-export default Nob;
+export default Knob;
